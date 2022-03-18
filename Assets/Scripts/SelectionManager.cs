@@ -21,7 +21,7 @@ public class SelectionManager : MonoBehaviour
     {
         if (_selection)
         {
-            Debug.Log("Here");
+            // Debug.Log("Here");
             var selectionRenderer = _selection.GetComponent<Renderer>();
             selectionRenderer.material = defaultMaterial;
             _selection = null;
