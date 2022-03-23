@@ -12,16 +12,18 @@ public class WalkOn : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Debug.Log("Player Triggered");
-            if (other.gameObject.name == "panel1")
+            if (gameObject.name == "Panel1")
             {
+                Debug.Log("Panel 1 Pressed");
                 Quest_2.PanelPressed(1, true);
             }
-            else if (other.gameObject.name == "panel2")
+            else if (gameObject.name == "Panel2")
             {
+                Debug.Log("Panel 2 Pressed");
                 Quest_2.PanelPressed(2, true);
             }
-            var _renderer = GetComponent<Renderer>();
-            _renderer.material = defaultMaterial;
+            // var _renderer = GetComponent<Renderer>();
+            // _renderer.material = defaultMaterial;
         }
     }
 }
